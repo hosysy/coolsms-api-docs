@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="description" content="">
+
+
+    <title>쿨에스엠에스 문서 :: Docdock</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/horsey.css" rel="stylesheet">
+    
+    <link href="/css/theme.css" rel="stylesheet">
+    
+    
+      <link href="/css/theme-blue.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+
+    
+
+  </head>
+  <body class="" data-url="/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	<p>COOLSMS Documents</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "\/";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+    
+  </div>
+
+  
+    <ul class="topics">
+        
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/appstore/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/appstore/">
+        <span>쿨에스엠에스 문서</span>
+
+        
+        
+
+        <i style="color:grey" class="fa fa-circle-thin read-icon"></i>
+      </a>
+              
+    </li>
+  
+ 
+
+          
+        
+
+        
+        <section id="shortcuts">
+            
+                <li class="" role="">
+                    <hr>
+                    <a href="https://github.com/coolsms"><i class='fa fa-github'></i> Github repo</a>
+                    
+                </li>
+            
+                <li class="" role="">
+                    
+                    <a href="https://docs.coolsms.co.kr/rest-api/"><i class='fa fa-bookmark'></i> API Reference</a>
+                    
+                </li>
+            
+        </section>    
+        
+        
+            <a class="" href="#" data-clear-history-toggle=""><i class="fa  fa-history"></i> </a>
+        
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+        
+        <div id="body-inner">
+          
+
+
+
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
+</span>
+
+ 
+
+
+<h1 id="개발-문서">개발 문서</h1>
+
+<p>이곳에서는 쿨에스엠에스의 오픈소스 SDK 를 사용하여 국내 모든 이동통신사의 SMS, LMS, MMS 문자메시지와 카카오톡(알림톡, 친구톡)으로 메시지를 발송하는 기술적인 방법에 대한 내용을 담고 있습니다.</p>
+
+<p>현재 Python, PHP, Java, Delph, C 등의 언어를 공식 지원하고 있습니다. NodeJS, Ruby, .Net, Perl 등 공유 정신이 강한 외부 개발자분들에 의해서도 배포되고 있습니다.</p>
+
+<p><a href="https://support.coolsms.co.kr/hc/ko/articles/115000964851-SDK">공개된 모든 코드 한눈에 보기</a></p>
+
+<p>또한 지원되지 않는 언어 및 플랫폼에서는 REST API 를 기반으로 자체적으로 구현하실 수 있습니다.</p>
+
+<h2 id="coolsms-restful-api-v3-0">COOLSMS RESTful API v3.0</h2>
+
+<p>수익공유의 확대
+문자메시지 API v3.0에서 수익공유를 더욱 확대하고자 합니다. (수익공유에 대해 궁금하시다면 여기를 참고하세요.)
+기존 건당 1원의 수익에서 2원의 수익으로 2배로 확대할 예정입니다.
+단, 곧 공개될 문자메시지 API  v3.0을 사용하여 발송할 경우에 해당됩니다. 기존 Classic API 혹은 REST API v2.0을 사용하고 계신다면 v3.0 적용을 적극 고려해 보시면 좋겠습니다.</p>
+
+<p>소셜 로그인 지원
+Github, Facebook, Google, Naver 등에서 지원하는 소셜 로그인을 쿨에스엠에스에서도 지원하여 웹 기반의 응용프로그램을 손쉽게 개발 할 수 있도록 지원하겠습니다. 사용자는 API 키 발급 및 설정 없이도 권한 인증 만으로도 손쉽게 응용프로그램을 통해 문자를 발송 할 수 있게 됩니다.</p>
+
+<p>유니코드 단일화 및 Full JSON
+컴퓨팅 환경 변화와 개발 트렌드에 맞게 API 전반에 걸쳐 유니코드와 JSON포맷을 채용하였습니다. 텍스트의 인코딩을 유니코드로 단일화 하므로써 기존 한글 인코딩과 관련한 혼란이 줄고, Response 에만 적용된 JSON을 동일하게 Request 에도 도입하여 포맷을 일치하였습니다.</p>
+
+<p>앱개발자의 발송단가 임의선택
+앱을 등록한 개발자가 단가를 임의로 선택하여 추가적인 수익공유가 가능합니다.
+휘트니스 관리 프로그램을 예로 들면,  관리 프로그램에 있어 문자발송은 필수기능으로 문자발송에 따른 수익공유로 프로그램 판매 및 유지보수 비용을 대신할 수 있어 프로그램을 무료로 제공하는 것도 가능합니다.</p>
+
+<p>7월 베타버전 오픈을 목표로 작업하고 있으며 레퍼런스 문서는 아래 링크에서 확인 가능합니다.</p>
+
+<p><a href="http://sms-api-v3.readthedocs.io/ko/latest/">http://sms-api-v3.readthedocs.io/ko/latest/</a></p>
+
+<p>NodeJS(Javascript) 버전을 시작으로 하여 PHP, Python, Java 등 다양한 언어용 SDK를 배포할 예정입니다.</p>
+
+<h2 id="커뮤니티">커뮤니티</h2>
+
+<p>개발자들 간의 자유로운 의견 교환을 위해 커뮤니티를 운영하고 있습니다.</p>
+
+<p><a href="https://support.coolsms.co.kr/hc/ko/community/topics">개발자 커뮤니티 바로가기</a></p>
+	
+  
+
+
+        
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+        
+            <a class="nav nav-next" href="/appstore/" title="쿨에스엠에스 문서" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>    
+
+    <script src="/js/clipboard.min.js"></script>
+<script src="/js/featherlight.min.js"></script>
+<script src="/js/html5shiv-printshiv.min.js"></script>
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="/js/modernizr.custom.71422.js"></script>
+<script src="/js/learn.js"></script>
+<script src="/js/hugo-learn.js"></script>
+
+
+<link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+<script src="/mermaid/mermaid.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+  </body>
+</html>
+

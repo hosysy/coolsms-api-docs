@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>쿨에스엠에스 API References</title>
+    <link>/rest-api/</link>
+    <description>Recent content on 쿨에스엠에스 API References</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    
+	<atom:link href="/rest-api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>요청 인증</title>
+      <link>/rest-api/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/authentication/</guid>
+      <description>요청 인증 REST API를 요청(Request)할 때 HTTP 헤더에 Authorization 정보를 추가하여 인증 받을 수 있습니다. API를 요청한 계정의 소유자를 확인하는데 필수적인 절차입</description>
+    </item>
+    
+    <item>
+      <title>메시지발송</title>
+      <link>/rest-api/simple-message/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/simple-message/</guid>
+      <description>메시지발송 1,000건 이하의 소량의 문자메시지를 발송합니다. 대량의 문자메시지를 안정적으로 발송하려면 그룹메시지 을 사용하세요. Resource URL https://solapi.com/SimpleMessage/3/sendMessages Request Syntax { &amp;quot;messages&amp;quot;: [ { &amp;quot;to&amp;quot;:</description>
+    </item>
+    
+    <item>
+      <title>그룹 메시지</title>
+      <link>/rest-api/group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/group/</guid>
+      <description>그룹메시지 그룹메시지는 대량메시지 뿐만 아니라 소량의 메시지도 안전하게 발송할 수 있는 메커니즘을 제공합니다. 기존 API의 문제점 대량의 메시지를 프로그램 내</description>
+    </item>
+    
+    <item>
+      <title>메시지로그 조회</title>
+      <link>/rest-api/getmessageloglist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/getmessageloglist/</guid>
+      <description>메시지로그 조회 발송 요청된 메시지 로그를 조회합니다. 접수만 되고 발송 요청되지 않은 메시지는 로그로 남지 않으므로 조회 대상이 아닙니다. 레코드 정렬은 메시지 생</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/rest-api/scheduled-message/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/scheduled-message/</guid>
+      <description>예약메시지 관리 접수된 예약메시지에 대한 목록, 취소 등의 관리 API를 제공합니다. 예약메시지 목록 예약된 메시지 목록을 리턴합니다. 이미 발송된 메시지는 조회</description>
+    </item>
+    
+    <item>
+      <title>메시지상태코드</title>
+      <link>/rest-api/messagestatuscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/messagestatuscode/</guid>
+      <description>메시지상태코드 숫자 4자리로 구성된 메시지의 상태를 나타내는 코드입니다. 코드 첫번째 자리 숫자의 의미는 아래와 같습니다. 코드 내용 1xxx 접수(전) 상태 코드) 2xxx</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/rest-api/images/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/images/</guid>
+      <description>이미지 MMS 발송에 필요한 이미지를 업로드하고 관리하는 API를 제공합니다. 이미지 업로드 MMS 발송에 필요한 이미지 파일을 업로드 합니다. MMS 발송 때 미리 업로드 된 이</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/rest-api/errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/errors/</guid>
+      <description>오류코드 InternalError 서버 내부 오류 HTTP Status Code: 500 InvalidAPIKey 유효한 API Key가 아님 HTTP Status Code: 403 SignatureDoesNotMatch 생성한 Signature가 일치하지 않음 HTTP Status Code: 403 NotEnoughBalance 잔액이 부족함 HTTP Status Code: 402 RequestTimeTooSkewed 시간 값이</description>
+    </item>
+    
+    <item>
+      <title>API Credentials</title>
+      <link>/rest-api/apikeys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/apikeys/</guid>
+      <description>API Key 관리 REST API 호출을 통해 API Key 생성, 삭제, Secret Key 재생성 등 관리 할 수 있습니다. !include (apikeys/createCredential.txt) !include (apikeys/getCredentialInfo.txt) !include (apikeys/regenerateSecretKey.txt) !include (apikeys/getCredentialList.txt) !include (apikeys/updateCredentialStatus.txt) !include (apikeys/deleteCredentials.txt)</description>
+    </item>
+    
+    <item>
+      <title>용어사전</title>
+      <link>/rest-api/dictionary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/dictionary/</guid>
+      <description>용어사전 수신번호 발신번호 발신번호 사전등록제 메시지 아이디 이미지 알림톡 친구톡 수신번호 수신번호 입력 수신번호 입력시 국가번호를 제외한 현지 전화번호를 대시</description>
+    </item>
+    
+    <item>
+      <title>잔액정보 가져오기</title>
+      <link>/rest-api/balance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/rest-api/balance/</guid>
+      <description>잔액정보 이 API는 Authentication Info를 제외한 Parameters가 필요 없습니다. 유저의 잔액정보를 가져옵니다. Request Parameters 필수 입력 파라메터가 없습니다. Response Parameters { &amp;quot;data&amp;quot;:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/rest-api/authentication/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/simple-message/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/group/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/getmessageloglist/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/scheduled-message/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/messagestatuscode/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/images/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/errors/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/apikeys/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/dictionary/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/balance/</loc>
+  </url>
+  
+  <url>
+    <loc>/rest-api/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/rest-api/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="/rest-api/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/rest-api/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/rest-api/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="/rest-api/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/rest-api/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/rest-api/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="/rest-api/"
+                />
+  </url>
+  
+</urlset>
