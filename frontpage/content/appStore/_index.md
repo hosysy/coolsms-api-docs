@@ -1,45 +1,68 @@
 +++
-title = "쿨에스엠에스 문서"
+title = "쿨에스엠에스 앱 스토어 "
 description = ""
-date = "2017-04-24T18:36:24+02:00"
+date = "2017-09-14T18:36:24+02:00"
+weight = 40
 +++
 
-# 개발 문서
 
-이곳에서는 쿨에스엠에스의 오픈소스 SDK 를 사용하여 국내 모든 이동통신사의 SMS, LMS, MMS 문자메시지와 카카오톡(알림톡, 친구톡)으로 메시지를 발송하는 기술적인 방법에 대한 내용을 담고 있습니다.
- 
-현재 Python, PHP, Java, Delph, C 등의 언어를 공식 지원하고 있습니다. NodeJS, Ruby, .Net, Perl 등 공유 정신이 강한 외부 개발자분들에 의해서도 배포되고 있습니다.
+## 쿨에스엠에스 앱 스토어란?
 
-[공개된 모든 코드 한눈에 보기](https://support.coolsms.co.kr/hc/ko/articles/115000964851-SDK)
- 
-또한 지원되지 않는 언어 및 플랫폼에서는 REST API 를 기반으로 자체적으로 구현하실 수 있습니다.
+쿨에스엠에스를 이용하여 문자 발송 시 해당 프로그램의 개발자들에게 수익금을 적립 해드리는 서비스 입니다.
 
-## COOLSMS RESTful API v3.0
+수익금은 **20,000원** 이상이 되면 출금 가능하며 출금요청 후 확인기간(7일)이 지난 뒤에 [정산정보](https://www.coolsms.co.kr/app_cash_manager)에 입력된 계좌번호로 입금 됩니다.<br />
 
-수익공유의 확대
-문자메시지 API v3.0에서 수익공유를 더욱 확대하고자 합니다. (수익공유에 대해 궁금하시다면 여기를 참고하세요.)
-기존 건당 1원의 수익에서 2원의 수익으로 2배로 확대할 예정입니다.
-단, 곧 공개될 문자메시지 API  v3.0을 사용하여 발송할 경우에 해당됩니다. 기존 Classic API 혹은 REST API v2.0을 사용하고 계신다면 v3.0 적용을 적극 고려해 보시면 좋겠습니다.
- 
-소셜 로그인 지원
-Github, Facebook, Google, Naver 등에서 지원하는 소셜 로그인을 쿨에스엠에스에서도 지원하여 웹 기반의 응용프로그램을 손쉽게 개발 할 수 있도록 지원하겠습니다. 사용자는 API 키 발급 및 설정 없이도 권한 인증 만으로도 손쉽게 응용프로그램을 통해 문자를 발송 할 수 있게 됩니다.
- 
-유니코드 단일화 및 Full JSON
-컴퓨팅 환경 변화와 개발 트렌드에 맞게 API 전반에 걸쳐 유니코드와 JSON포맷을 채용하였습니다. 텍스트의 인코딩을 유니코드로 단일화 하므로써 기존 한글 인코딩과 관련한 혼란이 줄고, Response 에만 적용된 JSON을 동일하게 Request 에도 도입하여 포맷을 일치하였습니다.
- 
-앱개발자의 발송단가 임의선택
-앱을 등록한 개발자가 단가를 임의로 선택하여 추가적인 수익공유가 가능합니다.
-휘트니스 관리 프로그램을 예로 들면,  관리 프로그램에 있어 문자발송은 필수기능으로 문자발송에 따른 수익공유로 프로그램 판매 및 유지보수 비용을 대신할 수 있어 프로그램을 무료로 제공하는 것도 가능합니다.
- 
-7월 베타버전 오픈을 목표로 작업하고 있으며 레퍼런스 문서는 아래 링크에서 확인 가능합니다.
- 
-  http://sms-api-v3.readthedocs.io/ko/latest/
- 
-NodeJS(Javascript) 버전을 시작으로 하여 PHP, Python, Java 등 다양한 언어용 SDK를 배포할 예정입니다.
+{{%notice info%}}
+이 문서에서 지칭하는 **앱**은 쿨에스엠에스 **앱 스토어**를 이용하는 문자 솔루션을 얘기합니다.
+{{%/notice%}}
 
-## 커뮤니티
+## 적용 방법
 
-개발자들 간의 자유로운 의견 교환을 위해 커뮤니티를 운영하고 있습니다.
+#### 1. 정산정보 입력
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[정산정보](https://www.coolsms.co.kr/app_provider)페이지에서 정산정보를 등록합니다.
 
-[개발자 커뮤니티 바로가기](https://support.coolsms.co.kr/hc/ko/community/topics)
+#### 2. 내 앱 만들기
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[앱 관리](https://www.coolsms.co.kr/my_app_list)페이지에서 **앱 등록**버튼을 클릭한 뒤 각각 폼에 맞게 입력 후 **생성**버튼을 클릭합니다.
 
+#### 3. 앱 아이디 확인
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+앱 생성을 완료한뒤 [앱 관리](https://www.coolsms.co.kr/my_app_list)페이지에서 앱 아이디를 확인합니다.
+
+
+![find_app_id.png](/images/find_app_id.png)
+
+#### 4. 문자 발송 코드내에 앱 아아디 입력
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[REST API v1, v2](https://www.coolsms.co.kr/REST_API)의 경우 **srk**, [REST API v3](http://sms-api-v3.readthedocs.io/ko/latest/)는 **app_id**필드에 위에서 발급받은 **앱 아이디**값을 넣어주시면 됩니다.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{{<button href="https://google.com" >}} REST API v1 사용방법 바로가기 {{< /button >}}
+{{<button href="https://google.com" >}} REST API v2 사용방법 바로가기{{< /button >}}
+{{<button href="https://google.com" >}} REST API v3 사용방법 바로가기{{< /button >}}
+
+## 수익금 종류
+
+문자발송 건당 발생하며 **기본수익금**과 **추가수익금** 두가지로 구분 되며 각각 설명은 아래를 참고 부탁드립니다.
+
+* 기본수익금 : <br />
+&nbsp;&nbsp;
+기본적으로 발생하는 수익으로 [REST API v1, v2](https://www.coolsms.co.kr/REST_API)이용시 **1원** [REST API v3](http://sms-api-v3.readthedocs.io/ko/latest/) 이용시 **2원**이 적립됩니다.
+
+* 추가수익금 : <br />
+&nbsp;&nbsp;
+[REST API v3](http://sms-api-v3.readthedocs.io/ko/latest/) 이용시에만 적용되며 **앱 개발자가 지정한 단가 - 기본단가의 차익**만큼 추가로 적립됩니다. <br />
+
+{{%notice note%}}
+  개발자가 추가 수익금을 10원으로 했다면 [REST API v3](http://sms-api-v3.readthedocs.io/ko/latest/)이용시 실제로 차감되는 금액은 **(기본단가(20원) + 추가수익금(10원) = 총 30원)**이며
+  이중 **(추가수익금(10원) + 기본수익금 (2원) = 총 12원)**은 앱 개발자에게 적립됩니다.
+{{%/notice%}}
+
+## 수익금 확인 및 출금 요청 방법
+
+[캐쉬 매니저](https://www.coolsms.co.kr/app_cash_manager)에서 수익금 확인을 실시간 확인 할 수 있으며, 마찬가지로 같은 페이지의 '출금요청'탭에서 출금요청이 가능합니다.
+{{%notice note%}}
+  수익금은 **20,000원** 이상이 되면 출금 가능하며 출금요청 후 확인기간(7일)이 지난 뒤에 [정산정보](https://www.coolsms.co.kr/app_cash_manager)에 입력된 계좌번호로 입금 됩니다.<br />
+  출금 수수료는 [앱 스토어 출금수수료율](https://coolsms.zendesk.com/knowledge/articles/115000666032/ko?brand_id=7472347&return_to=%2Fhc%2Fko%2Farticles%2F115000666032)에서 확인 가능합니다.
+{{%/notice%}}
